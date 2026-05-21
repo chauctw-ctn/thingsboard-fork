@@ -23,18 +23,42 @@
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #eee;
-    color: #0f172a;
+    color: #000000;
     --mat-card-elevated-container-elevation: none;
 
     mat-card {
       background-color: rgba(255, 255, 255, 0.88);
-      color: #0f172a;
-      border: 1px solid rgba(148, 163, 184, 0.2);
+      color: #000000;
+      border: 1px solid rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(6px);
     }
     .tb-login-form {
       @media #{$mat-gt-xs} {
         width: 480px !important;
+      }
+
+      .mat-mdc-button-base {
+        color: #000000;
+      }
+
+      .mat-mdc-form-field {
+        --tb-login-field-color: #000000;
+        --tb-login-field-color-muted: rgba(0, 0, 0, 0.7);
+        --tb-login-field-outline-color: rgba(0, 0, 0, 0.55);
+        --mat-form-field-outlined-input-text-color: var(--tb-login-field-color);
+        --mat-form-field-outlined-label-text-color: var(--tb-login-field-color-muted);
+        --mat-form-field-outlined-hover-label-text-color: var(--tb-login-field-color);
+        --mat-form-field-outlined-focus-label-text-color: var(--tb-login-field-color);
+        --mat-form-field-leading-icon-color: var(--tb-login-field-color-muted);
+        --mat-form-field-trailing-icon-color: var(--tb-login-field-color-muted);
+        --mat-form-field-outlined-outline-color: var(--tb-login-field-outline-color);
+        --mat-form-field-outlined-hover-outline-color: var(--tb-login-field-color);
+        --mat-form-field-outlined-focus-outline-color: var(--tb-login-field-color);
+      }
+
+      .mat-mdc-form-field-error,
+      .mat-mdc-form-field-hint {
+        color: #000000;
       }
 
       .forgot-password {
@@ -44,6 +68,7 @@
 
       .tb-action-button{
         margin: 20px 0 16px;
+        color: #000000;
       }
     }
 
@@ -82,7 +107,7 @@
       }
 
       a.login-with-button {
-        color: rgba(black, 0.87);
+        color: #000000;
         background-color: #ffffff;
       }
 
