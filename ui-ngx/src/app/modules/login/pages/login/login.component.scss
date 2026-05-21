@@ -20,10 +20,18 @@
   display: flex;
   flex: 1 1 0;
   .tb-login-content {
-    margin-top: 36px;
-    margin-bottom: 76px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: #eee;
+    color: #0f172a;
     --mat-card-elevated-container-elevation: none;
+
+    mat-card {
+      background-color: rgba(255, 255, 255, 0.88);
+      color: #0f172a;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      backdrop-filter: blur(6px);
+    }
     .tb-login-form {
       @media #{$mat-gt-xs} {
         width: 480px !important;
